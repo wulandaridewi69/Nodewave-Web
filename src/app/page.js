@@ -5,6 +5,42 @@ import Top from '../app/assets/background_top.png';
 import Iphone from '../app/assets/iphone.png';
 import Minimo from  '../app/assets/mini-mobile.png';
 import Minip from  '../app/assets/mini-pc.png';
+import MiniCards from './components/MiniCards';
+
+const data = {
+  result: [
+      {
+          id: 1,
+          name: 'Ahmad Prasetyo',
+          description: 'Buat aplikasi sama tim ini emang luar biasa dicarikan solusi yang paling murah supaya bisa segera mulai aplikasi PPOB saya. 2 minggu udah jadi hasilnya saya tinggal fokus di promosi! Terima kasih Nodewave'
+      },
+      {
+          id: 2,
+          name: 'Laras Ratnadewi',
+          description: 'Awalnya bingung mau buat website pada mahal. Hubungi tim Nodewave, ngobrol bentar, eh aplikasinya langsung jadi. Saya dan suami tinggal cerita aja lewat zoom maunya buat website seperti apa, langsung dibuatin dengan cepat sama Nodewave.'
+      },
+      {
+          id: 3,
+          name: 'Yusuf Uwais',
+          description: 'Yang paling keren sih source codenya sekalian dikasih, pas pula bisa pakai Flutter, jadi gw ama cofounder bisa develop lagi fitur2 baru untuk startup gw. Thanks a lot Nodewave supportnya!!'
+      },
+      {
+          id: 4,
+          name: 'Ahmad Prasetyo',
+          description: 'Buat aplikasi sama tim ini emang luar biasa dicarikan solusi yang paling murah supaya bisa segera mulai aplikasi PPOB saya. 2 minggu udah jadi hasilnya saya tinggal fokus di promosi! Terima kasih Nodewave'
+      },
+      {
+          id: 5,
+          name: 'Laras Ratnadewi',
+          description: 'Awalnya bingung mau buat website pada mahal. Hubungi tim Nodewave, ngobrol bentar, eh aplikasinya langsung jadi. Saya dan suami tinggal cerita aja lewat zoom maunya buat website seperti apa, langsung dibuatin dengan cepat sama Nodewave.'
+      },
+      {
+          id: 6,
+          name: 'Yusuf Uwais',
+          description: 'Yang paling keren sih source codenya sekalian dikasih, pas pula bisa pakai Flutter, jadi gw ama cofounder bisa develop lagi fitur2 baru untuk startup gw. Thanks a lot Nodewave supportnya!!'
+      },
+  ]
+}
 
 const Home = () =>  {
   return (
@@ -42,46 +78,61 @@ const Home = () =>  {
 
       {/* //Our Product// */}
       <div className='mt-40'>
-      <p className='text-white text-center font-poppins text-sm not-italic font-semibold leading-normal'>Our Product</p>
-      <div className='flex gap-8'>
-        <div>
-          <div className='bg-white w-1/2 flex gap-4'>
-            <Image src={Minimo}/>
-            <div>
-              <p>Mobile Apps</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className='text-white text-center font-poppins text-sm not-italic font-semibold leading-normal'>Our Product</p>
+        <div className='flex gap-8'>
+          <div>
+            <div className='bg-white w-1/2 flex gap-4'>
+              <Image src={Minimo}/>
+              <div>
+                <p>Mobile Apps</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M13.75 3.75L18.75 10M18.75 10L13.75 16.25M18.75 10H1.25" stroke="#FFB347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div className='bg-black w-1/2 flex gap-4'>
+              <Image src={Minip}/>
+              <div>
+                  <p>Website</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M13.75 3.75L18.75 10M18.75 10L13.75 16.25M18.75 10H1.25" stroke="#FFB347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <div className='bg-black w-1/2 flex gap-4'>
-            <Image src={Minip}/>
-            <div>
-                <p>Website</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div className='bg-white w-1/2'>
+            <div className='flex gap-8'>
+              <Image src={Iphone}/>
+              <Image src={Iphone}/>
+              <Image src={Iphone}/>
             </div>
+            <p>Mobile Apps</p>
+            <p>Mobile apps Android dan iPhone sekaligus, buat aplikasi dengan fitur sesuka anda. 
+              Bisa untuk aplikasi transaksi jual beli, Aplikasi kasir, Aplikasi Informasi, maupun Aplikasi chat dengan fitur GPS.</p>
+            <Button
+              label="Pelajari Selengkapnya"
+              // loading={loading || disabled}
+              className={'w-44 pr-5 pl-5 pt-3 pb-3 mt-2.5 mb-8 rounded-full bg-teal-400 text-white'} 
+            />
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M13.75 3.75L18.75 10M18.75 10L13.75 16.25M18.75 10H1.25" stroke="#FFB347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div className='bg-white w-1/2'>
-          <div className='flex gap-8'>
-            <Image src={Iphone}/>
-            <Image src={Iphone}/>
-            <Image src={Iphone}/>
-          </div>
-          <p>Mobile Apps</p>
-          <p>Mobile apps Android dan iPhone sekaligus, buat aplikasi dengan fitur sesuka anda. 
-            Bisa untuk aplikasi transaksi jual beli, Aplikasi kasir, Aplikasi Informasi, maupun Aplikasi chat dengan fitur GPS.</p>
-          <Button
-            label="Pelajari Selengkapnya"
-            // loading={loading || disabled}
-            className={'w-44 pr-5 pl-5 pt-3 pb-3 mt-2.5 mb-8 rounded-full bg-teal-400 text-white'} 
-          />
         </div>
       </div>
+
+      {/* //testimony// */}
+      <div>
+        <p className='text-white text-center font-poppins text-sm not-italic font-semibold leading-normal'>Testimony</p>
+        <div className="flex gap-8 mb-12 flex-nowrap">
+        {data.result.map((item) => {
+          return <MiniCards
+            id={item.id}
+            description={item.description}
+            name={item.name}
+          />
+        })}
+          </div>
+
       </div>
 
     </main>
