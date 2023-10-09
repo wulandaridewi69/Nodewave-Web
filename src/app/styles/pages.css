@@ -18,6 +18,11 @@
     width: 659px;
     height: 370px;
 }
+.line-red {
+    width: 97px;
+    height: 1px;
+    margin: auto;
+}
 
 .how-blue {
     background-image: url('../assets/blue-section.png');
