@@ -1,16 +1,30 @@
+.bg-top {
+    background-image: url('../assets/background_top.png');
+    width: 1512px;
+    height: 881px;
+}
+
+.scroll-pad::-webkit-scrollbar {
+    display: none;
+}
+.scroll-pad {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 .our-blue {
     width: 873px;
-    height: 520px;
+    height: auto;
     background-image: url('../assets/big-blue.png');
 }
 .img-tosca {
-    width: 557px;
+    width: 2375px;
     height: 329px;
     background-image: url('../assets/work-tosca.png');
 }
 .our-orange {
     width: 873px;
-    height: 520px;
+    height: auto;
     background-image: url('../assets/work-2.png');
 }
 .img-orange {
