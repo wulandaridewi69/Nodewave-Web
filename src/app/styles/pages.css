@@ -1,0 +1,31 @@
+.our-blue {
+    width: 873px;
+    height: 520px;
+    background-image: url('../assets/big-blue.png');
+}
+.img-tosca {
+    width: 557px;
+    height: 329px;
+    background-image: url('../assets/work-tosca.png');
+}
+.our-orange {
+    width: 873px;
+    height: 520px;
+    background-image: url('../assets/work-2.png');
+}
+.img-orange {
+    background-image: url('../assets/work-orange.png');
+    width: 659px;
+    height: 370px;
+}
+
+.how-blue {
+    background-image: url('../assets/blue-section.png');
+    width: -webkit-fill-available;
+    height: 665px;
+}
+.how-black {
+    width: 773px;
+    height: 502px;  
+    background-image: url('../assets/inner-blue-sec.png');
+}

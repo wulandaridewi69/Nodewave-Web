@@ -1,17 +1,16 @@
 import Image from 'next/image';
 
+import '../app/styles/pages.css';
 import Button from './components/Button';
 import Top from '../app/assets/background_top.png';
 import Iphone from '../app/assets/iphone.png';
 import Minimo from  '../app/assets/mini-mobile.png';
 import Minip from  '../app/assets/mini-pc.png';
 import MiniCards from './components/MiniCards';
-// import WorkBlue from '../components/big-blue.png';
-// import WorkOrange from '../components/work-2.png';
-// import MiniWorkBlue from '../components/work-tosca.png';
-// import MiniWorkOrange from '../components/work-orange.png';
 import BgCode from '../app/assets/bg-mini-code.png';
 import BgPhone from '../app/assets/bg-mini-phone.png';
+import People from '../app/assets/people.png';
+import Cube from '../app/assets/cube.png';
 
 const data = {
   result: [
@@ -141,27 +140,55 @@ const Home = () =>  {
       </div>
 
        {/* //Our Work// */}
-       {/* <div>
-         <p>Our Works</p>
-         <div>
-           <div>
-             <Image src={WorkBlue}/>
-             <div>
-              <Image src={MiniWorkBlue}/>
+       <div>
+        <p>Our Works</p>  
+        <div className='flex flex-nowrap'>
+          <div className='our-blue'>
+            <div className='flex gap-10'>
+              <div className='img-tosca'></div>
               <div>
                 <p>Rayu Motor</p>
                 <p>AC Service Workshop that has implemented online registration to make it easier for consumers, mechanics, and sales</p>
               </div>
+            </div>            
+          </div>
+          <div className='our-orange'>
+            <div className='img-orange'></div>
+          </div>
+        </div>       
+       </div>
+
+       {/* //How We Work// */}
+       <div className='how-blue'>
+         <p className='text-white font-600 text-center'>How We Work</p>
+         <div className='how-black flex gap-10 m-auto'>
+           <div className='grid gap-10  bg-white'>
+             <div className='flex gap-10 bg-grey'>
+               <Image src={People}/>
+               <p>My name is Danny, I’m looking for profile website company</p>
+             </div>
+             <div className='flex gap-10 bg-grey'>               
+              <p>Hello Danny, thank to reaching out us. We are interested to your offer. Maybe we can set meeting</p>
+               <Image src={Cube}/>
+             </div>
+             <div className='flex gap-10 bg-grey'>
+               <Image src={People}/>
+               <p>Sounds good, I have many desires to explain</p>
+             </div>
+             <div className='flex gap-10 bg-grey'>               
+              <p>How do I arrange our meeting on Monday at 10 WIB and my team will contact you again</p>
+               <Image src={Cube}/>
              </div>
            </div>
            <div>
-            <Image src={WorkOrange}/>   
-            <div>
-              <Image src={MiniWorkOrange}/>  
-            </div>          
+             <p>Estimate</p>
+             <p>Estimate the cost of creating your application with us. Pricing is transparent at the start with a gradual payment method.</p>
            </div>
          </div>
-       </div> */}
+         <div>
+
+         </div>
+       </div>
 
        {/* //Application// */}
        <div>
